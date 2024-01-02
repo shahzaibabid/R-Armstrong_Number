@@ -3663,11 +3663,11 @@ p + .quote-classic {
 * Footers
 */
 .footer-modern {
-	background: #38393b;
+	background: #F5F5F5;
 }
 
 .footer-modern > * + * {
-	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid #000;
 }
 
 .footer-modern * + .rd-form {
@@ -3713,7 +3713,7 @@ p + .quote-classic {
 }
 
 .footer-modern-list a, .footer-modern-list a:focus, .footer-modern-list a:active {
-	color: rgba(255, 255, 255, 0.8);
+	color: #000;
 }
 
 .footer-modern-list a:hover {
@@ -3726,12 +3726,12 @@ p + .quote-classic {
 	height: 35px;
 	font-size: 20px;
 	line-height: 35px;
-	color: #ffffff;
-	background: rgba(255, 255, 255, 0.1);
+	color: #000;
+	background: #6046B6;
 }
 
 .footer-modern-contacts a, .footer-modern-contacts a:focus, .footer-modern-contacts a:active {
-	color: #ffffff;
+	color: #000;
 }
 
 .footer-modern-contacts a:hover {
@@ -3824,7 +3824,7 @@ p + .quote-classic {
 	height: 42px;
 	font-size: 20px;
 	line-height: 42px;
-	background: rgba(255, 255, 255, 0.1);
+	background: #6046b6;
 	z-index: 1;
 }
 
@@ -3849,7 +3849,7 @@ p + .quote-classic {
 }
 
 .footer-social-list a, .footer-social-list a:focus, .footer-social-list a:active {
-	color: #ffffff;
+	color: #000;
 }
 
 .footer-social-list a:hover {
@@ -5545,11 +5545,11 @@ html [class*='section-'].section-top-0 {
 }
 
 .footer-modern.context-dark, .footer-modern.bg-gray-dark, .footer-modern.bg-primary {
-	color: rgba(255, 255, 255, 0.4);
+	color: #000;
 }
 
 .footer-modern.context-dark p.rights, .footer-modern.bg-gray-dark p.rights, .footer-modern.bg-primary p.rights {
-	color: rgba(255, 255, 255, 0.2);
+	color: #000;
 }
 
 .footer-modern.context-dark p.rights a, .footer-modern.bg-gray-dark p.rights a, .footer-modern.bg-primary p.rights a, .footer-modern.context-dark p.rights a:focus, .footer-modern.bg-gray-dark p.rights a:focus, .footer-modern.bg-primary p.rights a:focus, .footer-modern.context-dark p.rights a:active, .footer-modern.bg-gray-dark p.rights a:active, .footer-modern.bg-primary p.rights a:active {
