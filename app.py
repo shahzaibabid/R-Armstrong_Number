@@ -17,4 +17,12 @@ def contact():
 def feedback():
  return render_template("feedback.html")
 
+@app.route("/signin")
+def signin():
+ return render_template("signin.html")
+
+@app.route("/register")
+def register():
+ return render_template("register.html")
+
 app.run(debug=True)

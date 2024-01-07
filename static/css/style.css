@@ -1879,12 +1879,12 @@ button {
 }
 
 .button-lg {
-	padding: 20px 45px;
-	font-size: 16px;
-	line-height: 1.85;
-	min-width: 230px;
+	padding: 20px 30px;
 	font-size: 16px;
 	line-height: 1.5;
+	min-width: 230px;
+	font-size: 16px;
+	line-height: 1.4;
 	letter-spacing: 2px !important;
 }
 
@@ -2868,7 +2868,7 @@ h4 + .rd-form {
 @media (min-width: 576px) {
 	.form-style-1 {
 		padding: 40px 30px;
-		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
+		box-shadow: 0 0 10px 0 #6046B6;
 	}
 }
 
