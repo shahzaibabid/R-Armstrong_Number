@@ -1,0 +1,11 @@
+{
+    "params":{
+        
+        "local_server" :"True",
+        "local_uri" : "mysql://root:@localhost/python-flask",
+        "prod_uri" : "mysql://root:@localhost/python-flask",
+        
+        "admin_user":"mu082267@gmail.com",
+        "admin_password":"Malik123"
+    }
+}

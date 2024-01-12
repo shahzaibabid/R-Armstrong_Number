@@ -1,0 +1,59 @@
+  
+{%extends "ulayout.html" %}
+
+{% block content%}
+
+  <!-- Page Content  -->
+ 
+          
+  <div class="profile-container">
+    <div class="profile-header">
+      <h2>Edit Profile</h2>
+    </div>
+  
+    <form action="#" method="post" enctype="multipart/form-data">
+      <!-- Existing fields -->
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" value="" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" value="" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="address">Address</label>
+        <textarea id="address" name="address" rows="2"></textarea>
+      </div>
+  
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" value="" required>
+      </div>
+  
+      <!-- New Profile Picture field -->
+      <div class="form-group">
+        <label for="avatar">Profile Picture</label>
+        <input type="file" id="avatar" name="avatar">
+        
+      </div>            
+  
+      <button type="submit">Save Changes</button>
+    </form>
+  </div>
+  
+  
+  
+  
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
+{%endblock%}

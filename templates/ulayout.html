@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Users</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+	<link rel="stylesheet" href="./static/static/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="./static/static/css/style.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	        </button>
+        </div>
+	  		<div class="img bg-wrap text-center py-4" style="background-image: url(./static/static/images/bg_1.jpg);">
+	  			<div class="user-logo">
+	  				<div class="img" style="background-image: url(./static/static/images/logo1.jpg);"></div>
+	  				<h3>R-Armstrong_Number</h3>
+	  			</div>
+	  		</div>
+        <ul class="list-unstyled components mb-5">
+          <li class="active">
+            <a href="/user"><span class="fa fa-home mr-3"></span> Home</a>
+          </li>      
+          <li>
+            <a href="/profile"><span class="fa fa-gift mr-3"></span> Profile </a>
+          </li>
+          <li>
+            <a href="/calculatearmstrong"><span class="fa fa-trophy mr-3"></span>Calculate Armstrong</a>
+          </li>
+          <li>
+            <a href="/calculaterange"><span class="fa fa-cog mr-3"></span> Calculate Range</a>
+          </li>         
+          <li>
+            <a href="/signout"><span class="fa fa-sign-out mr-3"></span> Sign Out</a>
+          </li>
+        </ul>
+
+    	</nav>
+
+
+        {%block content%}
+        
+        {%endblock%}
+
+
