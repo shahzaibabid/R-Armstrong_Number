@@ -15,33 +15,23 @@
       <!-- Existing fields -->
       <div class="form-group">
         <label for="username">Username</label>
-        <input type="text" id="username" name="username" value="" required>
+        <input type="text" id="username" name="username" value="{{post.username}}" required disabled>
       </div>
-  
+      <div class="form-group">
+        <label for="username">Name</label>
+        <input type="text" id="name" name="name" value="{{post.name}}" required>
+      </div>
       <div class="form-group">
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" value="" required>
-      </div>
-  
-      <div class="form-group">
-        <label for="address">Address</label>
-        <textarea id="address" name="address" rows="2"></textarea>
+        <input type="email" id="email" name="email" value="{{post.email}}" required disabled>
       </div>
   
       <div class="form-group">
         <label for="phoneNumber">Phone Number</label>
-        <input type="tel" id="phoneNumber" name="phoneNumber" value="" required>
+        <input type="tel" id="phoneNumber" name="phoneNumber" value="{{post.phone}}" required>
       </div>
-  
-      <!-- New Profile Picture field -->
-      <div class="form-group">
-        <label for="avatar">Profile Picture</label>
-        <input type="file" id="avatar" name="avatar">
-        
-      </div>            
-  
-      <button type="submit">Save Changes</button>
-    </form>
+    
+      <button style="padding: 8px 16px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;">Save Changes</button>    </form>
   </div>
   
   

@@ -1,0 +1,68 @@
+{%extends "alayout.html"%}
+
+{% block content %}  
+ <div id="layoutSidenav">
+ <div id="layoutSidenav_nav">
+ <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+ <div class="sb-sidenav-menu">
+ <div class="nav">
+ <div class="sb-sidenav-menu-heading"></div>
+ <a class="nav-link" href="/aindex">
+ <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+  Dashboard
+ </a>
+ 
+ <a class="nav-link" href="/auser">
+ <div class="sb-nav-link-icon"><i class="fa-regular fa-user"></i></i></div>
+ Users
+</a>                       
+<a class="nav-link" href="/afeedback">
+<div class="sb-nav-link-icon"><i class="fa-regular fa-comment"></i></i></div>
+ Feedback
+</a>
+<a class="nav-link" href="/auserattempt">
+<div class="sb-nav-link-icon"><i class="fa-regular fa-comment"></i></i></div>
+User Attempts
+</a>  
+</div>
+</div>
+<div class="sb-sidenav-footer">
+<div class="small">Logged in as:</div>
+Admin
+</div>
+</nav>
+</div>
+<div id="layoutSidenav_content">
+<main>
+<div class="container-fluid px-6">
+<br>
+<h1>USER ATTEMPTS</h1>                           
+<div class="card mb-4">
+<div class="card-header">
+<i class="fas fa-table me-1"></i>
+Database user attempt table
+</div>
+<table class="table">
+<thead class="thead-dark">
+<tr>
+<th scope="col">ID</th>
+<th scope="col"> USERNAME</th>
+<th scope="col">ATTEMPT_VALUE</th>
+<th scope="col">IS_ARMSTRONG</th>
+<th scope="col">RESULT</th>
+</tr>
+</thead>            
+
+</table>
+</div>
+</div>                          
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+{% endblock %}
+         

@@ -18,38 +18,21 @@
   </section>
 
   <!-- Login Form-->
-<section class="section section-sm section-first bg-default">
-    <div class="container">
-      <h3 class="heading-3">Login Form</h3>
-      <form class="rd-form rd-mailform form-style-1" data-form-output="form-output-global" data-form-type="contact" method="post" action="./user">
-        <div class="row row-20 gutters-20">
-          
-          <div class="col-md-6 col-lg-4 oh-desktop">
-            <div class="form-wrap wow slideInUp">
-              <input placeholder="Enter Your Email" class="form-input" id="contact-email-6" type="email" name="email" data-constraints="@Email @Required">
-              
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 oh-desktop">
-            <div class="form-wrap wow slideInUp">
-              <input  placeholder="Enter Your Password"class="form-input" type="password" name="password" data-constraints="@Required">
-              
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 oh-desktop">
-            <div class="form-wrap wow slideInUp">
-                <button class="button button-sm button-primary button-winona wow fadeInRight" type="submit">Login</button>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 oh-desktop">
-            <div class="form-wrap wow slideInUp">
-          <a href="/register">Not Registered Yet? Register Here</a>
-            </div>
-          </div>
-        </div>
-  
-      </form>
-    </div>
-  </section>
+  <div style="display: flex; justify-content: center; align-items: center; height: 50vh; margin: 0; font-family: Arial, sans-serif;">
+
+  <form action="/signin" method="post" style="margin: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 5px; max-width: 300px;">
+      <div style="margin-bottom: 10px;">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 3px; box-sizing: border-box;" required>
+      </div>
+      <div style="margin-bottom: 10px;">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 3px; box-sizing: border-box;" required>
+      </div>
+      <div>
+          <button type="submit" style="padding: 10px 20px; background-color: #4CAF50; color: #fff; border: none; border-radius: 3px; cursor: pointer;">Login</button>
+      </div>
+  </form>
+</div>
 
 {% endblock %}

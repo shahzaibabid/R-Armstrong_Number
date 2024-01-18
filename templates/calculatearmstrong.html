@@ -4,23 +4,42 @@
 {% block content%}
 
   <!-- Page Content  -->
-<div id="content" class="p-4 p-md-5 pt-5">
-    <form action="#" method="post" enctype="multipart/form-data">
-        <!-- Existing fields -->
-        <div class="form-group">
-          <label for="username">Calculate Range</label>
-          <input type="text" id="calculaterange" name="calculaterange"  value="" placeholder="Enter Starting Range" required>
-        </div>
+  <div class="profile-container" style="height:250px;">
+    <div class="profile-header">
+      <h5>Calculate Armstrong Number</h5>
+    </div>
   
-        <div class="form-group">
-          <input type="text" id="calculaterange" name="calculaterange"  value="" placeholder="Enter Ending Range" required>
-        </div>
-    
-    
-        <button type="submit">Submit</button>
+    <form action="#" method="post">
+      <!-- Existing fields -->
+      <div class="form-group">
+        <label for="username">Enter A Number</label>
+        <input type="number" id="number" name="number"  required maxlength="5">
+      </div>
+        
+      <button style="padding: 8px 16px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;">Submit</button>  
       </form>
-</div>
+      <center>
+        {% if error_message %}
+            <div class="alert alert-danger" role="alert">
+                <h5>{{ error_message }}</h5>
+            </div>
+        {% elif result is not none %}
+            {% if result %}
+                <div class="alert alert-success" role="alert">
+                    <h5>The entered number is an Armstrong number!</h5>
+                </div>
+                
+            {% else %}
+                <div class="alert alert-warning" role="alert">
+                    <h5>Not an Armstrong number.</h5>
+                </div>
+            {% endif %}
+        {% endif %}
+    </center>
+    
   </div>
+  
+  
 
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.js"></script>
